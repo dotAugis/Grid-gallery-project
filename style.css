@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Raleway:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 10px;
+    box-sizing: border-box;
+}
+
+/*- - - - - header start - - - - - */
+
+header .navBar {
+    height: 13rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+}
+
+header .banner img {
+    max-height: 50rem;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* navBar flex start */
+
+.logo {
+    position: absolute;
+    left: 0%;
+    top: 13%;
+}
+
+.navBar ul {
+    display: flex;    
+}
+
+.navBar li {
+    display: flex;
+    align-items: center;
+}
+
+.navBar a:link {
+    font-size: 2rem;
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+    padding-right: 1rem;
+}
+
+.navBar a:visited {
+    color: black;
+}
+
+.navBar a:hover {
+    text-decoration: underline;
+}
+
+.navBar a:active {
+    color: orange;
+    text-decoration: underline;
+}
+
+/* ./ navBar flex */
+
+
+
+/* - - - - - header end - - - - - */
+
+/* - - - - - main start - - - - - */
+
+.gridContainer {
+    grid-template-columns: repeat(3, 1fr); 
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-gap: 3rem;
+    padding: 1rem;
+}
+
+.panel {
+    box-shadow: 2px 2px 5px #0c0c0c79;
+    background-color: #2A2A2A;
+}
+
+.panel img {
+    width: 100%;
+    max-width: 100%;
+}
+
+.panel h1, .panel p {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    padding: 0 1rem 0 1rem;
+}
+
+.panel h1 {
+    text-transform: uppercase;
+    font-family: 'Bebas Neue', cursive;
+    color: #FFC108;
+    font-size: 3rem;  
+}
+
+.panel p {
+    font-size: 1.4rem;
+    padding-bottom: 5rem;
+
+}
+
+/* - - - - - main end - - - - - */
+
+/* - - - - - footer start - - - - - */
+footer {
+    background-color: #2A2A2A;
+    min-height: 4rem;
+    color: white;
+    font-family: 'Raleway', sans-serif; 
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+footer p, footer a {
+    font-size: 1.6rem;
+    text-transform: uppercase;
+}
+
+footer a:link {
+    color:#FFC108;
+    text-decoration: none;
+}
+
+footer a:visited {
+    color:#FFC108;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer a:active {
+    color: lightskyblue;
+    text-decoration: underline;
+}
+
+/* - - - - - footer  end  - - - - - */
+
+@media screen and (max-width: 960px) {
+
+    /* navbar */
+    header .navBar {
+        height: 10rem;
+    }
+
+    .logo {
+    width: 18rem;
+    }
+
+    header .banner img {
+        max-height: 30rem;
+        width: 100%;
+    }
+
+    /* main */
+    .gridContainer {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    /* navbar */
+    .logo {
+        width: 13rem;
+    }
+
+    header .navBar {
+        height: 7rem;
+    }
+
+    .navBar li:not(:first-child) {
+        display: none;    
+    }
+
+    header .banner img {
+        max-height: 13rem;
+        width: 100%;
+    }
+
+    /* main */
+    .gridContainer {   
+        grid-template-columns: 1fr;
+        place-items: center;
+    }
+
+    .panel {
+        max-width: 40rem;
+    }
+}
+
