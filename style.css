@@ -1,204 +1,193 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Raleway:wght@300&display=swap');
+/* colors 
+Orange: #ffc108;
+Gray: #424242;
+*/
 
+/* Imports*/
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans&display=swap');
+
+/* Overall */
 * {
     margin: 0;
     padding: 0;
-    font-size: 10px;
-    box-sizing: border-box;
 }
 
-/*- - - - - header start - - - - - */
+:root {
+    font-size: 10px;
+}
 
-header .navBar {
-    height: 13rem;
-    max-width: 1200px;
+/* Header */
+
+nav {
+    box-sizing: border-box;
+    height: 12rem;
+    width: 1200px;
     margin: 0 auto;
+}
+
+nav ul {
+    text-decoration: none;
+    list-style-type: none;
+    float: right;
+    line-height: 12rem;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 5rem;
+}
+
+nav img {
+    display: inline-block;
+    width: 180px;
+    margin-left: 5rem;
+    margin-top: 2rem;
+}
+
+
+/* link behavior in nav */
+
+nav li a {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 2.5rem;
+    color: #424242;
+    text-decoration: none;
+}
+
+nav li a:visited {
+    color: #424242;
+}
+
+nav li a:focus {
+    color: lightblue;
+    outline: none;
+}
+
+nav li a:hover {
+    border-bottom: 2px solid #ffc108;
+}
+
+nav li a:active {
+    color: lightblue;
+}
+
+/* Header */
+
+.banner img {
+    width: 100%;
+    padding-bottom: 5em;
+}
+
+/* rows */
+
+.container {
+    margin: 0 auto;
+    width: 1500px;
     display: flex;
-    justify-content: flex-end;
+    flex-flow: wrap;
+    justify-content: space-evenly;
+    
+}
+
+/* Panels */
+
+.box {
+    background-color: #424242;
+    width: 40em;
+    height: 40em;
+    box-shadow: rgba(66, 66, 66, 0.726) 5px 5px 10px;
+    margin-bottom: 4em;
+    box-sizing: border-box;
     position: relative;
 }
 
-header .banner img {
-    max-height: 50rem;
-    width: 100%;
-    object-fit: cover;
-}
-
-/* navBar flex start */
-
-.logo {
+.boxButtons {
+    width: 40em;
+    height: 3em;
+    background-color: #424242;
     position: absolute;
-    left: 0%;
-    top: 13%;
+    bottom: -7%;
+    box-shadow: rgba(66, 66, 66, 0.726) 5px 5px 10px;
 }
 
-.navBar ul {
-    display: flex;    
+.boxButtons img {
+    width: 25px;
+    margin-left: 2em;    
 }
 
-.navBar li {
-    display: flex;
-    align-items: center;
+.commentButton {
+    float: right;
+    margin-right: 2em;
+    justify-content: flex-end;
+    
 }
 
-.navBar a:link {
-    font-size: 2rem;
-    font-family: 'Raleway', sans-serif;
-    text-transform: uppercase;
-    text-decoration: none;
-    color: black;
-    padding-right: 1rem;
-}
-
-.navBar a:visited {
-    color: black;
-}
-
-.navBar a:hover {
-    text-decoration: underline;
-}
-
-.navBar a:active {
-    color: orange;
-    text-decoration: underline;
-}
-
-/* ./ navBar flex */
-
-
-
-/* - - - - - header end - - - - - */
-
-/* - - - - - main start - - - - - */
-
-.gridContainer {
-    grid-template-columns: repeat(3, 1fr); 
-    max-width: 1200px;
-    margin: 0 auto;
-    display: grid;
-    grid-gap: 3rem;
-    padding: 1rem;
-}
-
-.panel {
-    box-shadow: 2px 2px 5px #0c0c0c79;
-    background-color: #2A2A2A;
-}
-
-.panel img {
-    width: 100%;
-    max-width: 100%;
-}
-
-.panel h1, .panel p {
-    font-family: Arial, Helvetica, sans-serif;
-    color: white;
-    padding: 0 1rem 0 1rem;
-}
-
-.panel h1 {
-    text-transform: uppercase;
+.box h1 {
+    color: #ffc108;
+    font-size: 3em;
     font-family: 'Bebas Neue', cursive;
-    color: #FFC108;
-    font-size: 3rem;  
+    letter-spacing: .1em;
+    padding-left: .3em;
 }
 
-.panel p {
-    font-size: 1.4rem;
-    padding-bottom: 5rem;
-
-}
-
-/* - - - - - main end - - - - - */
-
-/* - - - - - footer start - - - - - */
-footer {
-    background-color: #2A2A2A;
-    min-height: 4rem;
+.box p {
     color: white;
-    font-family: 'Raleway', sans-serif; 
+    padding-left: .3em;
+    font-size: 2em;
+    font-family: 'Open Sans', sans-serif;
+}
 
-    display: flex;
-    flex-direction: column;
+
+
+/* Footer */
+
+Footer {
+    background-color: #424242;
+    height: 2.5em;
+    color:white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.7em;
     text-align: center;
-    justify-content: center;
+    line-height: 2.5em;
 }
 
-footer p, footer a {
-    font-size: 1.6rem;
-    text-transform: uppercase;
-}
-
-footer a:link {
-    color:#FFC108;
+Footer a {
+    color: #ffc108;
     text-decoration: none;
 }
 
-footer a:visited {
-    color:#FFC108;
+Footer a:visited {
+    color: #ffc108;
 }
 
-footer a:hover {
-    text-decoration: underline;
+Footer a:focus {
+    color: lightblue;
+    outline: none;
 }
 
-footer a:active {
-    color: lightskyblue;
-    text-decoration: underline;
+Footer a:hover {
+    border-bottom: 1px solid #ffc108;
 }
 
-/* - - - - - footer  end  - - - - - */
+Footer a:active {
+    color: lightblue;
+}
 
-@media screen and (max-width: 960px) {
 
-    /* navbar */
-    header .navBar {
-        height: 10rem;
-    }
-
-    .logo {
-    width: 18rem;
-    }
-
-    header .banner img {
-        max-height: 30rem;
+/* Media Query */
+@media screen and (max-width: 1499px) {
+    .container {
         width: 100%;
     }
 
-    /* main */
-    .gridContainer {
-        grid-template-columns: repeat(2, 1fr);
+        nav {
+            width: 80%;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+
+    .box {
+        width: 40em;
+            height: 40em;
     }
 }
-
-@media screen and (max-width: 768px) {
-
-    /* navbar */
-    .logo {
-        width: 13rem;
-    }
-
-    header .navBar {
-        height: 7rem;
-    }
-
-    .navBar li:not(:first-child) {
-        display: none;    
-    }
-
-    header .banner img {
-        max-height: 13rem;
-        width: 100%;
-    }
-
-    /* main */
-    .gridContainer {   
-        grid-template-columns: 1fr;
-        place-items: center;
-    }
-
-    .panel {
-        max-width: 40rem;
-    }
-}
-

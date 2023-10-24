@@ -1,0 +1,111 @@
+/* colors 
+Orange: #ffc108;
+Gray: #424242;
+*/
+
+/* Imports*/
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+/* Overall */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    font-size: 10px;
+}
+
+/* Header */
+
+nav {
+    box-sizing: border-box;
+    height: 12rem;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+nav ul {
+    text-decoration: none;
+    list-style-type: none;
+    float: right;
+    line-height: 12rem;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 5rem;
+}
+
+nav img {
+    display: inline-block;
+    width: 180px;
+    margin-left: 5rem;
+    margin-top: 2rem;
+}
+
+
+
+/* link behavior in nav */
+
+nav li a {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 2.5rem;
+    color: #424242;
+    text-decoration: none;
+}
+
+nav li a:visited {
+    color: #424242;
+    ;
+}
+
+nav li a:focus {
+    color: lightblue;
+    outline: none;
+}
+
+nav li a:hover {
+    border-bottom: 2px solid #ffc108;
+}
+
+nav li a:active {
+    color: lightblue;
+}
+
+/* Header */
+
+.banner img {
+    width: 100%;
+    padding-bottom: 5em;
+}
+
+/* rows */
+
+.row {
+    background-color: #ffc108;
+    width: 1400px;
+    margin: 0 auto;
+}
+
+/* Our Penguin */
+
+.ourStar {
+    width: 700px;
+    margin: 0 auto;
+    margin-bottom: 5em;
+
+}
+
+.ourStar h1 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 5em;
+    color: #424242;
+    align-items: center;
+    text-align: center;
+}
+
+.ourStar h1 img {
+    width: .8em;
+}
+
