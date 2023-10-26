@@ -109,3 +109,36 @@ nav li a:active {
     width: .8em;
 }
 
+/* Footer */
+
+Footer {
+    background-color: #424242;
+    height: 2.5em;
+    color:white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.7em;
+    text-align: center;
+    line-height: 2.5em;
+}
+
+Footer a {
+    color: #ffc108;
+    text-decoration: none;
+}
+
+Footer a:visited {
+    color: #ffc108;
+}
+
+Footer a:focus {
+    color: lightblue;
+    outline: none;
+}
+
+Footer a:hover {
+    border-bottom: 1px solid #ffc108;
+}
+
+Footer a:active {
+    color: lightblue;
+}
